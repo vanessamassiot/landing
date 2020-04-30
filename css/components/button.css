@@ -1,0 +1,26 @@
+.btn-pink {
+	display: inline-block;
+	background-color: #ED6183;
+    color: #3F3C56;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+
+.text-base{
+   opacity:1;
+}
+/* On cache le second texte */
+.text-hover{
+   display:none;
+}
+/* On fait disparaitre le premier texte au passage de la souris. */
+.btn-pink:hover span.text-base{
+   opacity:0;
+}
+/* On fait apparaitre le second texte au passage de la souris. */
+.btn-pink:hover span.text-hover{
+   display:inherit;
+   position:absolute;
+}
